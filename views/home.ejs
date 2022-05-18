@@ -1,0 +1,92 @@
+<%- include ("partials/head") %>
+
+<body >
+    <%- include ("partials/header") %>
+
+    
+
+    <div class="button">
+      <div class="button-subscribe">
+      <button><span>Suscribite</span></button>
+    </div>
+  </div>
+    <div class="popup">
+      <div class="content">
+        <div class="container">
+          <div class="circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+     
+          </div>
+          
+          <span class="closebtn">&#9932;</span>
+          
+          <div class="title">
+            <h1>Recibi nuestras noticias!</h1>
+          </div>
+          
+          
+          
+          <div class="subscribe">
+            <h1>Hacete miembro para ver lo nuevo de Bariloche! </h1>
+            
+          
+            <form>
+              <input type="email" placeholder="Aqui va tu email">
+              <input type="submit" value="Subscribite">
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+       
+    
+     <h1 class="h1-home">Bienvenido a Yendo</h1>
+    <h4 class="h4-subtitulo-home">Tu mejor amigo a la hora de conocer Bariloche</h4>
+    <hr class="hr-home" style="width: 35vw; margin-left: 50px;height: 3px;color:black;font-weight: 900;">
+    <img src="https://i.pinimg.com/564x/21/9e/b0/219eb0dd89af056e80502e11949dc482.jpg" alt="foto-home" class="foto-home-principal">
+    
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f6bd60" fill-opacity="1" d="M0,192L15,208C30,224,60,256,90,266.7C120,277,150,267,180,272C210,277,240,299,270,261.3C300,224,330,128,360,128C390,128,420,224,450,234.7C480,245,510,171,540,165.3C570,160,600,224,630,218.7C660,213,690,139,720,96C750,53,780,43,810,53.3C840,64,870,96,900,128C930,160,960,192,990,218.7C1020,245,1050,267,1080,261.3C1110,256,1140,224,1170,213.3C1200,203,1230,213,1260,224C1290,235,1320,245,1350,208C1380,171,1410,85,1425,42.7L1440,0L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z"></path></svg>
+
+    <div class="accordion">
+        <ul>
+          <li><a href="/afters">
+            <div>
+              <h1>Fiestas</h1>
+              <p>Contamos con el conocimiento de todos los eventos +17 en la ciudad de Bariloche, dirigite al sector noche en nuestra pagina para ver el contenido</p>
+            </div>
+            </a> </li>
+          <li><a href="/alquileres">
+            <div>
+              <h1>Alquileres</h1>
+              <p>Manejamos tus alquileres con personas de nuestra confianza y te brindamos un presupuesto mas que comodo para tu viaje.</p>
+            </div>
+            </a> </li>
+          <li><a href="/playas">
+            <div>
+              <h1>Playas</h1>
+              <p>Mira nuestro sector de playas y conoce la ubicación de las mejores playas que tenemos.Si te interesa armar una guia personalizada con nosotros hablanos al wpp.</p>
+            </div>
+            </a> </li>
+        </ul>
+      </div>
+
+      <script>
+        /*Funcion para mostrar y cerrar el SUSCRIBITE*/
+$('button').click(function(){
+  $('.popup').addClass('open');
+});
+ 
+$('.popup .closebtn').click(function(){
+  $('.popup').removeClass('open');
+});
+
+
+      </script>
+       
+    
+    <%- include ("partials/footer") %>
+</body>

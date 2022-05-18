@@ -1,0 +1,185 @@
+<%- include ("partials/head") %>
+
+<body onload="onLoad()">
+    <%- include ("partials/header") %>
+    
+    <h1 class="title-all">Las mejores playas de Bariloche </h1>
+
+    <div id="container-clima">
+        <div class="block" style="display: none;">
+            <div id="location"></div>
+            
+            <div id="description"></div>
+        </div>
+        <div class="block-clima" style="border: 2px solid #000;margin: 10px;padding: auto; position: absolute; left: 5vw;top:15vh;height: 100px;">
+            <div style="font-weight: 600;" class="information-container">
+                Temperatura
+                <div style="position: absolute; left: 25%;" class="info" id="temperature"></div>
+            </div>
+            <br>
+            <div  style="font-weight: 600;text-align: center;" class="information-container">
+                Humedad
+                <div style="position: absolute; left: 30%;" class="info" id="humidity"></div>
+        </div>
+    </div>
+    
+    
+        <box-icon id="lupa" name='search'></box-icon><input type="text" name="buscador" id="buscador" placeholder="Busca...">
+   
+    
+    <div class="container">
+    
+        <div  id="titulo-card" class="title">
+          <div id="map">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.007083140993!2d-71.81732268481507!3d-41.02510097929908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9610a9263b119833%3A0x9f5ad05e4ecd0c04!2sHotel%20Puerto%20Blest!5e0!3m2!1ses-419!2sar!4v1639490034051!5m2!1ses-419!2sar" >
+            </iframe>
+        </div>
+        <div class="title"><h4>Puerto Blest</h4></div>
+
+        
+        <div class="info-pb"><p>Llegada unicamente en bote, coste noche en hotel $20000, coste diario gratis</p></div>
+        <a href="#">Leer más</a>
+        </div> 
+       
+        <div  id="titulo-card" class="title">
+           
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12025.646992792954!2d-71.4050450670329!3d-41.10369781870795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a70b2f5e82da3%3A0xcd356909304f2f56!2sIsla%20Huemul!5e0!3m2!1ses-419!2sar!4v1639489137185!5m2!1ses-419!2sar"
+            >
+            </iframe>
+            </div>
+            <div class="title"><h4>Isla Huemul</h4></div>
+            <div class="info-ih"><p>Llegada unicamente en bote o kayak, acampe porhibido, entrada gratuita</p></div>
+            
+            <a href="#">Leer más</a>
+            </div>
+            <div  id="titulo-card" class="title">
+           
+                <div id="map" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96377.18975032486!2d-71.55802895641793!3d-40.986140781180275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96109f448f69b691%3A0xf1340920d54acece!2sIslas%20de%20los%20Troncos%20F%C3%B3siles!5e0!3m2!1ses-419!2sar!4v1639489563164!5m2!1ses-419!2sar"
+                     >
+                   </iframe>
+                </div>
+                <div class="title"><h4>Islas Fosiles</h4></div>
+                <div class="info-ih"><p>Llegada unicamente en bote, acampe porhibido, entrada gratuita</p></div>
+                <a href="#">Leer más</a>
+                </div>
+
+             <div id="titulo-card" class="title" >
+           
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.007083140993!2d-71.81732268481507!3d-41.02510097929908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9610a9263b119833%3A0x9f5ad05e4ecd0c04!2sHotel%20Puerto%20Blest!5e0!3m2!1ses-419!2sar!4v1639490034051!5m2!1ses-419!2sar" 
+                        >
+                        </iframe>
+                    </div>
+                    <div class="title"><h4>Ortiz Basualdo</h4></div>
+                    <div class="info-pb"><p>Llegada unicamente en bote, coste noche en hotel $20000, coste diario gratis</p></div>
+                    <a href="#">Leer más</a>
+                    </div>
+                    <div  id="titulo-card" class="title">
+                       
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12025.646992792954!2d-71.4050450670329!3d-41.10369781870795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a70b2f5e82da3%3A0xcd356909304f2f56!2sIsla%20Huemul!5e0!3m2!1ses-419!2sar!4v1639489137185!5m2!1ses-419!2sar"
+                        >
+                        </iframe>
+                        </div>
+                        <div class="title"><h4>Brazo Tristeza</h4></div>
+                        <div class="info-ih"><p>Llegada unicamente en bote o kayak, acampe porhibido, entrada gratuita</p></div>
+                        
+                        <a href="#">Leer más</a>
+                        </div>
+                        <div  id="titulo-card" class="title">
+                       
+                            <div id="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96377.18975032486!2d-71.55802895641793!3d-40.986140781180275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96109f448f69b691%3A0xf1340920d54acece!2sIslas%20de%20los%20Troncos%20F%C3%B3siles!5e0!3m2!1ses-419!2sar!4v1639489563164!5m2!1ses-419!2sar"
+                                 >
+                               </iframe>
+                            </div>
+                            <div class="title"><h4>Islas Gallina</h4></div>
+                            <div class="info-ih"><p>Llegada unicamente en bote, acampe porhibido, entrada gratuita</p></div>
+                            <a href="#">Leer más</a>
+                            </div>
+
+                            <div  id="titulo-card" class="title">
+                                <div id="map">
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.007083140993!2d-71.81732268481507!3d-41.02510097929908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9610a9263b119833%3A0x9f5ad05e4ecd0c04!2sHotel%20Puerto%20Blest!5e0!3m2!1ses-419!2sar!4v1639490034051!5m2!1ses-419!2sar" >
+                                  </iframe>
+                              </div>
+                              <div class="title"><h4>Puerto Pañuelo</h4></div>
+                      
+                              
+                              <div class="info-pb"><p>Llegada unicamente en bote, coste noche en hotel $20000, coste diario gratis</p></div>
+                              <a href="#">Leer más</a>
+                              </div> 
+
+
+
+                              <div  id="titulo-card" class="title">
+                       
+                                <div id="map">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96377.18975032486!2d-71.55802895641793!3d-40.986140781180275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96109f448f69b691%3A0xf1340920d54acece!2sIslas%20de%20los%20Troncos%20F%C3%B3siles!5e0!3m2!1ses-419!2sar!4v1639489563164!5m2!1ses-419!2sar"
+                                     >
+                                   </iframe>
+                                </div>
+                                <div class="title"><h4>Bahia del Toro</h4></div>
+                                <div class="info-ih"><p>Llegada unicamente en bote, acampe porhibido, entrada gratuita</p></div>
+                                <a href="#">Leer más</a>
+                                </div>
+                            
+    </div>
+
+<script>
+
+
+  /*CLIMA*/
+
+  const API_KEY = 'd55bab53d4e1ebeffd227ccf32323b75';
+
+const fetchData = position => {
+    const { latitude , longitude } = position.coords;
+    fetch(`http://api.openweathermap.org/data/2.5/weather?units=metric&lat=${latitude}&lon=${longitude}&appid=${API_KEY}`)
+        .then(response => response.json())
+        .then(data => setWeatherData(data));
+
+}
+const setWeatherData = data => {
+    console.log(data);
+    const weatherData = {
+        location: data.name,
+        description: data.weather[0].main,
+        humidity: data.main.humidity + "%",
+        
+        temperature: data.main.temp + "°c",
+        date: getDate(),
+    }
+    Object.keys(weatherData).forEach(key => {
+        document.getElementById(key).textContent = weatherData[key];
+    });
+ 
+
+    cleanUp();
+
+}
+const cleanUp = () => {
+    let container = document.getElementById("container-clima");
+    let loader = document.getElementById("loader");
+
+    loader.style.display = "none";
+    container.style.display = "flex";
+}
+
+const getDate = () => {
+    let date = new Date();
+    return `${date.getDate()}-${('0' + (date.getMonth() + 1)).slice(-2)}-${date.getFullYear()}`;
+}
+
+const onLoad = () => {
+    navigator.geolocation.getCurrentPosition(fetchData);
+}
+
+</script>
+</body>
+<%- include ("partials/footer") %>
+</html>
+    
