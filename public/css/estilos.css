@@ -86,6 +86,8 @@ body{
     text-decoration: none;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 20px;
+    
+    
 }
 .nav_container{
  
@@ -104,15 +106,8 @@ body{
     font-size: 65px;
     padding-top: 10px;
 }
-.container-clima{
-  border: 1px solid #000;
-  margin-left: 20px;
-}
-.block-clima{
-  margin-left: 20px;
 
 
-}
 .nav_label, .nav_input{
     display: none;
 }
@@ -147,6 +142,18 @@ body{
 .nav a:hover{
   color: #fff;
 }
+
+/*CLIMA*/
+.container-clima{
+  border: 1px solid #000;
+  margin-left: 20px;
+}
+.block-clima{
+  margin-left: 20px;
+
+
+}
+/*FOOTER*/
 .footer-space{
     
    position: absolute;
@@ -161,7 +168,7 @@ a:visited, a:active {
 .filtro {
     display: none;
 }
-
+/*BUSCADOR*/
 #buscador{
     position: static;
     margin-top: -85px;
@@ -179,7 +186,7 @@ a:visited, a:active {
 
 /*ALQUILERES*/
 
-.titulo-lquileres{
+.titulo-alquileres{
   text-align: center;
   font-size: 54px;
   margin-top: 10vh;
@@ -359,13 +366,13 @@ a:visited, a:active {
 /*POPUP HOME*/
 
 
-.button {
-    position: absolute;
-    top: 6vh;
-    left: 1vw;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
+.button  {
+    position: relative;
+    display: flex;
+    top: 58vh;
+    z-index: 1;
+   
+   
   }
   .button-subscribe button {
     position: absolute;
@@ -528,57 +535,9 @@ a:visited, a:active {
   }
  
 
-
-
-       
-      
-
-
-
-
 /*CAMPINGS*/
 
 
-
-.card{
-  box-shadow: 0 0 15px rgba(0,0,0,0.07);
-  margin: 1rem 0;
-  border-radius: 50%;
-  
-}
-
-
-.section-status .img-container{
-  text-align: center;
-  padding: 1rem 0;
-}
-.section-status .img-container img{
-  height: 10rem;
-  
-}			
-.section-status .text{
-  text-align: center;
-}
-.section-status .text .title{
-  font-size: 2rem;
-}
-.section-status .text .sub-title{
-  font-size: 1.3rem;
-}
-.section-status .mey-text-color-gray{
-  color: #000000;
-}
-.section-status .footer{
-  text-align: center;
-  padding: 2rem 0;
-}
-.mey-btn{
-  border:none;
-}
-.mey-btn-md{
-  padding: 1rem 1.8rem;
-  border-radius: 3rem;
-}
 
 /*AFTERS*/
 
@@ -911,14 +870,14 @@ a {
 
 @media screen and (max-width: 769px){ 
 
-.button{
-  display: none;
-}
+  .button{
+    display: none;
+  }
 
 }
 
 @media screen and (min-width: 769px){ 
- 
+ /*HOME*/
 
   .accordion {
      
@@ -973,11 +932,11 @@ a {
 
 
 
-
+}
 
 
 @media (max-width: 700px){
-    
+    /*NAV RESPONSIVE*/    
     .nav_label{
         display: block;
         cursor: pointer;
@@ -988,7 +947,7 @@ a {
         position: fixed;
         top: 80px;
         bottom: 0;
-        background-color: #3498db;
+        background-color: #f6bd60;
         width: 100%;
         left: 0;
         display: flex;
@@ -1003,4 +962,4 @@ a {
     }
     
   
-  }}
+  }
