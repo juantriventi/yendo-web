@@ -537,7 +537,30 @@ a:visited, a:active {
 
 /*CAMPINGS*/
 
+.h2-campings{
+  display: flex;
+  justify-content: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 55px;
+  margin-top: 5px;
+}
 
+.img-cohiues{
+  float: left;
+  padding:50px;
+  margin-top: 25px;
+}
+.titulo-camping{
+  margin-left: auto;
+  margin-top:10px;
+}
+.p-campings:hover{
+font-weight: 600;
+font-size: 18px;
+transition: .3s
+
+
+}
 
 /*AFTERS*/
 
